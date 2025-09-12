@@ -2,7 +2,6 @@ import { cn } from "@/shared/config/lib";
 import {
   useState,
   type ChangeEvent,
-  type EventHandler,
   type InputHTMLAttributes,
   type ReactNode,
 } from "react";
