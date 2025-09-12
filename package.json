@@ -6,9 +6,13 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "lint:ts": "tsc",
     "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "lint:scss": "stylelint **/*.scss",
     "preview": "vite preview",
     "test:unit": "vitest",
+    "test:regression": "npx chromatic",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -23,6 +27,7 @@
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^4.1.1",
+    "@conarti/eslint-plugin-feature-sliced": "^1.0.5",
     "@eslint/js": "^9.33.0",
     "@storybook/addon-a11y": "^9.1.5",
     "@storybook/addon-docs": "^9.1.5",
@@ -35,23 +40,26 @@
     "@types/react": "^19.1.12",
     "@types/react-dom": "^19.1.9",
     "@vitejs/plugin-react": "^5.0.0",
+    "@vitest/browser": "3.2.4",
+    "@vitest/coverage-v8": "3.2.4",
+    "chromatic": "^13.1.4",
     "eslint": "^9.33.0",
+    "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "eslint-plugin-storybook": "^9.1.5",
     "globals": "^16.3.0",
     "jsdom": "^26.1.0",
+    "playwright": "^1.55.0",
     "sass-embedded": "^1.92.1",
     "storybook": "^9.1.5",
     "stylelint": "^16.24.0",
     "stylelint-config-standard": "^39.0.0",
+    "stylelint-config-standard-scss": "^16.0.0",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.39.1",
     "vite": "^7.1.2",
     "vite-plugin-svgr": "^4.5.0",
-    "vitest": "^3.2.4",
-    "@vitest/browser": "3.2.4",
-    "playwright": "^1.55.0",
-    "@vitest/coverage-v8": "3.2.4"
+    "vitest": "^3.2.4"
   }
 }
