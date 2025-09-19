@@ -6,7 +6,7 @@ import { useAppDispatch, useAppSelector } from "@/shared/lib";
 
 import styles from "./VerificationStep.module.scss";
 import { useTranslation } from "react-i18next";
-import { Button, Input, OTPInput, Spinner } from "@/shared/ui";
+import { Button, OTPInput, Spinner } from "@/shared/ui";
 import { resendCode } from "@/features/register/model/services/resendCode";
 import { verifyCode } from "@/features/register/model/services/verifyCode";
 import { useNavigate } from "react-router";

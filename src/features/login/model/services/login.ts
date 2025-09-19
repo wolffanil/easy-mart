@@ -1,6 +1,5 @@
-import { applyUserSession, userActions } from "@/entities/user";
+import { applyUserSession } from "@/entities/user";
 import { extractErrorMessage, httpClient } from "@/shared/api";
-import { LOCAL_STORAGE_USER_KEY } from "@/shared/config";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 
 type LoginArgs = {
